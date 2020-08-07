@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ./html__common/head -%>
+    <title id="title" data-title="contacts">Vulcanizare24</title>
+</head>
+<body>
+    <%- include ./html__common/header -%>
+    <main class="contacts__main" style="background-image: url(./images/contacts-bg.jpg);">
+        <div class="contacts">
+            <div class="contacts__title">
+                <p>Contacte:</p>
+            </div>
+            <table>
+                <tr>
+                    <td>📱</td>
+                    <td>
+                        068 312 777 | 060 908 817 | 062 047 778
+                    </td>
+                </tr>
+                <tr>
+                    <td>📍</td>
+                    <td>Chișinău, strada Varnița 2/10</td>
+                </tr>
+                <tr>
+                    <td>📅</td>
+                    <td class="last__row">
+                        <span class="day">Lu - Vi:</span>&nbsp;&nbsp; 08:00 - 17:00;
+                        <br>
+                        <span class="pause">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Pauză 12:00 - 13:00)</span>
+                        <br>
+                        <span class="day">Sâm:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08:00 - 12:00;
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="map">
+            <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=47%C2%B000'03.%2028%C2%B053'01.&key=AIzaSyAeKdt5GLEA2vn9of32sYftX8tQ2tiNIIA" allowfullscreen></iframe>
+        </div>
+    </main>
+    <%- include ./html__common/footer -%>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import "oil";
+@import "tires";
+@import "servicii";
+
+.body__catalog {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.full {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.side-menu{
+    box-shadow: 1px 1px 5px #808080;
+    background-color: rgba(136, 136, 136, 0.800);
+    border-radius: 0 15px 15px 0;
+    width: 20%;
+    height: 70vh;
+    display: block;
+    margin: 7vw 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+    .catalog__main__title {
+        font-size: 2vw;
+        letter-spacing: 1;
+        text-align: center;width: 100%;
+    }
+    .product-list-inner {
+        font-size: 0.9vw;
+        li {
+            height: 3vw;
+            margin-bottom: 3px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 1.9vw;
+            margin-right: 5px;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .catalog-main-menu{
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1vw;
+        
+    }
+
+    ul{
+        list-style: none;
+        padding: 4%;
+        clear: both;
+    .sub__category{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title__and__icon__menu {
+            display: flex;
+        }
+            font-size: 1.2vw;
+        img {
+            width: 1.6vw;
+            height: 1.6vw;
+            margin-right: 5px;
+        }
+    }
+        
+        i{
+            float: right;
+            vertical-align: middle;
+        }
+    
+        li{
+            a{
+                display: block;
+                text-decoration: none;
+                color: #000;
+                padding:5%;
+                border-bottom: 1px solid #fafafa;
+                border-radius: 5px;
+                margin-top: 2px;
+                height: 100%;
+                &:hover{
+                    background-color: #fafafa;
+                }
+            }
+        }
+    }
+}
+.service-list,.product-list,.service-list-inner,.product-list-inner{
+    display: none;
+}
+.show{
+    display: block;
+}
+.service-list {
+    font-size: 1.2vw;
+}
+
+.main__servicii {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        margin-bottom: 5%;
+    }
+}

@@ -1,0 +1,138 @@
+.choose__tire__category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95vh;
+    img {
+        width: 4vw;
+    }
+    a{
+        background-color: rgb(117, 117, 117);
+        border-radius: 15px;
+        font-size: 2vw;
+        padding: 1%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            background-color: rgb(194, 194, 194);
+            text-decoration: underline;
+        }
+    }
+}
+
+.full__filter__container__margin__old {
+    margin: 3.2% 0 30vw 0;
+}
+
+.full__filter__container__margin__new {
+    margin: 3.2% 0 3vw 0;
+}
+
+.full__filter__container{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    button {
+        border-radius: 15px;
+        margin: 0% 45% 1% 45%;
+        width: 10%;
+        border: 0;
+        background-image: url("https://img.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-324.jpg?size=626&ext=jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1vw;
+        height: 2.5vw;
+    }
+}
+
+.filter__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 2%;
+    padding-top: 1%;
+}
+
+.filter {
+    margin-bottom: 10px;
+    height: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://i.dlpng.com/static/png/5373130-light-pink-background-simple-stock-photo-download-image-now-istock-light-pink-background-1024_768_preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 1% ;
+    width: 22%;
+    label {
+        font-size: 1.2vw;
+    }
+    select {
+        width: 33%;
+        height: 1.8vw;
+        background-color: rgb(233, 233, 233);
+    }
+}
+.filter__industriala {
+    margin-bottom: 10px;
+    height: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://i.dlpng.com/static/png/5373130-light-pink-background-simple-stock-photo-download-image-now-istock-light-pink-background-1024_768_preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 1% ;
+    width: 40%;
+    label {
+        font-size: 1.2vw;
+    }
+    select {
+        width: 40%;
+        height: 1.8vw;
+        background-color: silver;
+    }
+}
+
+.tires__main__container {
+    padding: 5% 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+    
+.tire__container { 
+    margin: 0 5% 2vw 5%;
+    padding: 1%;
+    background-color: silver;
+    line-height: 2;
+    width: 20%;
+    height: 30vw;
+    border-radius: 15px;
+    font-size: 1vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    span {
+        font-weight: bold;
+    }
+    img {   
+        width: 90%;
+    }
+}
+
+.tire__name {
+    text-align: center;
+}
