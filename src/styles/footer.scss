@@ -3,59 +3,114 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     background-color: rgb(56, 56, 56);
-    
     width: 100%;
-    padding: 0.5%;
-    .footer__offers__container{
+    padding: 1%;
+
+    .first__footer__row {
+        background-color: rgb(68, 68, 68);
+        color: rgb(202, 202, 202);
+        padding-right: 1%;
+        i {
+            padding-right: 1vw;
+        }
+        table{
+            font-family: 'Lora', serif;
+            tr{
+                font-size: 1vw;
+                &{
+                    :nth-child(1){
+                        text-align: center;
+                    }
+                    :nth-child(2){
+                        padding: 2% 0;
+                        width: 90%;
+                        list-style: none;
+                        .day{
+                            font-weight: bold;
+                        }
+                        .pause{
+                            font-size: 0.8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .second__footer__row {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-evenly;
-        width: 50%;
+        justify-content: space-between;
+        width: 15%;
         img{
             width: 2.8vw;
+            border-radius: 5px;
+            &:hover {
+                width: 3vw;
+                opacity: 0.7;
+            }
         }
-        .footer__icon{
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            border-radius: 15px;
-            width: 25%;
+    }
+
+    .third__footer__row {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .footer__offers__container{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 90%;
+            margin-bottom: 1vw;
+
+            img{
+                width: 2.8vw;
+            }
+            .footer__icon{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 15px;
+                width: 25%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 1vw;
+                padding: 0 1%;
+                
+                p{
+                    font-family: 'Lobster', cursive;
+                    text-align: center;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        .footer__parteners__container{
+            width: 90%;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            margin: 0 1vw;
-            padding: 0 1%;
-
-            p{
-                font-family: 'Lobster', cursive;
-                text-align: center;
-                font-size: 1.2vw;
+            .parteners__icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-        }
-    }
-    .footer__parteners__container{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        width: 50%;
-        
-        justify-content: flex-end;
-        .parteners__icons{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        p{
-            text-align: center;
-            font-size: 1.4vw;
-            margin-right: 2vw;
-            font-family: 'Montserrat Subrayada', sans-serif;
-        }
-        img{
-            width: 6.5vw;
-            height: 3vw;
-            margin-right: 1vw;
+            p{
+                font-size: 1.4vw;
+                margin-right: 1vw;
+                font-family: 'Montserrat Subrayada', sans-serif;
+                color: rgb(202, 202, 202);
+            }
+            img{
+                width: 6.3vw;
+                height: 2.8vw;
+                margin-right: 1vw;
+            }
         }
     }
 }
